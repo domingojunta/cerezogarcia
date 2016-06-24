@@ -23,7 +23,7 @@
 	<a href="/">Ir a home en Jetty</a>
 	<br/>
 	<br/>
-	<a href="/cerezogarcia/">Ir a home en Tomcat</a>
+	<a href="/cerezogarcia/home">Ir a home en Tomcat</a>
 	
 </body>
 </html>

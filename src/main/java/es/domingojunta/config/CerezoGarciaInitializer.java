@@ -19,7 +19,7 @@ public class CerezoGarciaInitializer extends AbstractAnnotationConfigDispatcherS
 	@Override
 	protected String[] getServletMappings() {
 		// TODO Auto-generated method stub
-		return new String[] {"/*"};
+		return new String[] {"/"};
 	}
 
 }
