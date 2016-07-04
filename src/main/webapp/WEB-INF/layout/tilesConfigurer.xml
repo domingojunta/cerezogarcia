@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="basic" template="/WEB-INF/layout/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+  </definition>
+  <definition name="home" extends="basic">
+    <put-attribute name="title" value="Inicio" />
+    <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+    <put-attribute name="menuItem" value="home"/>
+    
+  </definition>
+  <definition name="news" extends="basic">
+    <put-attribute name="title" value="Noticias" />
+    <put-attribute name="body" value="/WEB-INF/views/news.jsp" />
+    <put-attribute name="menuItem" value="news"/>
+    
+  </definition>
+  <definition name="services" extends="basic">
+    <put-attribute name="title" value="Noticias" />
+    <put-attribute name="body" value="/WEB-INF/views/services.jsp" />
+    <put-attribute name="menuItem" value="services"/>
+    
+  </definition>
+  <definition name="contact" extends="basic">
+    <put-attribute name="title" value="Noticias" />
+    <put-attribute name="body" value="/WEB-INF/views/contact.jsp" />
+    <put-attribute name="menuItem" value="contact"/>
+    
+  </definition>
+  <definition name="users" extends="basic">
+    <put-attribute name="title" value="Noticias" />
+    <put-attribute name="body" value="/WEB-INF/views/users.jsp" />
+    <put-attribute name="menuItem" value="users"/>
+    
+  </definition>
+  <definition name="links" extends="basic">
+    <put-attribute name="title" value="Noticias" />
+    <put-attribute name="body" value="/WEB-INF/views/links.jsp" />
+    <put-attribute name="menuItem" value="links"/>
+    
+  </definition>
+  <definition name="budged" extends="basic">
+    <put-attribute name="title" value="Presupuesto" />
+    <put-attribute name="body" value="/WEB-INF/views/Construction.jsp" />
+    <put-attribute name="menuItem" value="budged"/>
+    
+  </definition>
+</tiles-definitions>

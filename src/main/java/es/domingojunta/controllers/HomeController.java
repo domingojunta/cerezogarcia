@@ -11,9 +11,51 @@ public class HomeController {
 	@RequestMapping(value={"/","/home"})
 	public String home(Model model) {
 		
-		model.addAttribute("message", "Hola desde el controller");
+		
 		return "home";
 		
 	}
+	@RequestMapping(value="/news")
+	public String news() {
+		
+		
+		return "news";
+		
+	}
 	
+	@RequestMapping(value="/services")
+	public String services() {
+		
+		
+		return "services";
+		
+	}
+	@RequestMapping(value="/contact")
+	public String contact() {
+		
+		
+		return "contact";
+		
+	}
+	@RequestMapping(value="/links")
+	public String links() {
+		
+		
+		return "links";
+		
+	}
+	@RequestMapping(value="/users")
+	public String users() {
+		
+		
+		return "users";
+		
+	}
+	@RequestMapping(value="/budged")
+	public String budged() {
+		
+		
+		return "budged";
+		
+	}
 }

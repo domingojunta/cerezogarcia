@@ -6,7 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.resource.PathResourceResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
@@ -38,7 +40,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	}
 	
 	@Bean
-	public ViewResolver vieResolver(){
+	public ViewResolver viewResolver(){
 		return new TilesViewResolver();
 	}
 	@Override
@@ -47,6 +49,16 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		super.configureDefaultServletHandling(configurer);
 		configurer.enable();
 	}
+
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		// TODO Auto-generated method stub
+		//super.addResourceHandlers(registry);
+		
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/").resourceChain(true).addResolver(new PathResourceResolver());
+	}
+	
+	
 	
 	
 }
