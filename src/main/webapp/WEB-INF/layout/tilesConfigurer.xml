@@ -49,4 +49,16 @@
     <put-attribute name="menuItem" value="budged"/>
     
   </definition>
+  <definition name="communities" extends="basic">
+    <put-attribute name="title" value="Comunidades" />
+    <put-attribute name="body" value="/WEB-INF/views/communities.jsp" />
+    <put-attribute name="menuItem" value="communities"/>
+    
+  </definition>
+  <definition name="communityDetail" extends="basic">
+    <put-attribute name="title" value="Detalle de comunidad" />
+    <put-attribute name="body" value="/WEB-INF/views/communityDetail.jsp" />
+    <put-attribute name="menuItem" value="communityDetail"/>
+    
+  </definition>
 </tiles-definitions>

@@ -1,4 +1,6 @@
- <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%@ include file="/WEB-INF/layout/taglib.jsp" %>
  
  
  <!-- The justified navigation menu is meant for single line per list item.

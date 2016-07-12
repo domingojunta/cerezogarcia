@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/layout/taglib.jsp" %>
 
 <p class="lead well" style="text-align:justify">
 	A continuación le detallamos los servicios que le vamos a ofrecer:

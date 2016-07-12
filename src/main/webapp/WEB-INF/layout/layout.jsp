@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilesx" %>
+<%@ include file="/WEB-INF/layout/taglib.jsp" %>
  
  
 
@@ -47,6 +45,17 @@
               <li class="${menuItem == 'services' ? 'active' : '' }"><a href='<s:url value="/services"></s:url>'><span class="glyphicon glyphicon-list"></span> Servicios</a></li>
               <li class="${menuItem == 'budged' ? 'active' : '' }"><a href='<s:url value="/budged"></s:url>'><span class="glyphicon glyphicon-eur"></span> Presupuesto</a></li>
               <li class="${menuItem == 'contact' ? 'active' : '' }"><a href='<s:url value="/contact"></s:url>'><span class="glyphicon glyphicon-envelope"></span> Contacta</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comunidades <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="${menuItem == 'communities' ? 'active' : '' }"><a href='<s:url value="/communities"></s:url>'>Listar</a></li>
+                  
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  
+                </ul>
+              </li>
               
              
             </ul>
